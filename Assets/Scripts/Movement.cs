@@ -34,11 +34,11 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            Debug.Log("Rotating Left");
+            transform.Rotate(Vector3.forward * (_rotationThrust * Time.deltaTime));
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            Debug.Log("Rotating Right");
+            transform.Rotate(Vector3.back * (_rotationThrust * Time.deltaTime));
         }
     }
 
