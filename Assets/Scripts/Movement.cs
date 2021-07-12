@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Movement : MonoBehaviour
 {
+    [SerializeField] float _mainThrust = 100f;
+    [SerializeField] float _rotationThrust = 1f;
+
     private Rigidbody _rigidbody;
 
     void Start()
@@ -21,7 +25,7 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            _rigidbody.AddRelativeForce(Vector3.up);
+            _rigidbody.AddRelativeForce(Vector3.up * (_mainThrust * Time.deltaTime));
         }
     }
 
