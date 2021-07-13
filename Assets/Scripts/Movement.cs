@@ -32,6 +32,8 @@ public class Movement : MonoBehaviour
     
     void ProcessRotation()
     {
+        _rigidbody.freezeRotation = true;
+        
         if (Input.GetKey(KeyCode.A))
         {
             transform.Rotate(Vector3.forward * (_rotationThrust * Time.deltaTime));
@@ -40,6 +42,8 @@ public class Movement : MonoBehaviour
         {
             transform.Rotate(Vector3.back * (_rotationThrust * Time.deltaTime));
         }
+        
+        _rigidbody.freezeRotation = false;
     }
 
 }
