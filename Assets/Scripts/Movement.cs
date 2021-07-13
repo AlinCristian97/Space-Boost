@@ -13,8 +13,6 @@ public class Movement : MonoBehaviour
     private Rigidbody _rigidbody;
     private AudioSource _audioSource;
 
-    private bool _isAlive;
-
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();

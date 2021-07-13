@@ -225,6 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainThrust: 1000
   _rotationThrust: 100
+  _mainEngine: {fileID: 8300000, guid: 6e12b8912a0949c4e861ae5da5bb03ba, type: 3}
 --- !u!114 &7665306268142416448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,3 +239,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelLoadDelay: 2
+  _success: {fileID: 8300000, guid: aa711b704e02b8040af9d35ef27e8c41, type: 3}
+  _crash: {fileID: 8300000, guid: 765c52159ded441468c1893db05d3d26, type: 3}
